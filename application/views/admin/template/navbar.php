@@ -78,6 +78,14 @@
     </a>
   </li>
 
+  <li class="<?php if ($this->uri->segment(2) == "layanan") {
+                echo "active";
+              } ?> ">
+    <a href="<?php echo base_url(); ?>admin/layanan">
+      <span>Layanan Pengaduan</span>
+    </a>
+  </li>
+
   <li class="<?php if ($this->uri->segment(2) == "logout") {
                 echo "active";
               } ?> ">

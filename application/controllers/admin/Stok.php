@@ -46,10 +46,11 @@ class Stok extends CI_Controller
 		$jenis  = $this->input->post('jenis_vaksin');
 		
 		$dt_stok = array(
-			
 			'jumlah' => $this->input->post('jumlah'),
 		);
+
 		$queryStokDetail = $this->M_stok->ubahStokDetail($jenis,$dt_stok);
+
 		$this->session->set_flashdata('diubah', 'Data telah berhasil diubah');
 		redirect('admin/stok/');
 	}

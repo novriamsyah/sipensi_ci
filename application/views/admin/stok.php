@@ -24,6 +24,7 @@
                         <td>Spurnik V</td>
                         <td>Sinopharm</td>
                         <td>Sinovac</td>
+                        <td>Lainnya</td>
                     </tr>
                 </thead>   
                 <tbody>
@@ -34,6 +35,7 @@
                     <td><?php echo $queryAllData[3]->jumlah ?></td>
                     <td><?php echo $queryAllData[4]->jumlah ?></td>
                     <td><?php echo $queryAllData[5]->jumlah ?></td>
+                    <td><?php echo $queryAllData[6]->jumlah ?></td>
                     </tr>
                 </tbody>
                 </table>

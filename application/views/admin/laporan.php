@@ -22,14 +22,19 @@
                 <input type="date" name="tgl_sampai" class="form-control">            
             </div>
             <div class="form-group">
-                <button class="btn btn btn-success col-md-2 col-sm-2" type="submit">Cari</button>
+                <button class="btn btn btn-primary btn-sm" type="submit">Cari Data</button>
             </div>
             </form>
             </div>
         </div>
-        <div class="row" style="margin-top:70px;">
+        <div class="row" style="margin-top:10px;">
             <div class="col-md-12">
-            
+                <?php if(isset($_GET['tgl_dari'])){?>
+                    <div class="text-right">
+                        <a href="<?php echo base_url('admin/laporan/export?tgl_dari='.$_GET['tgl_dari'].'&tgl_sampai='.$_GET['tgl_sampai']);?>" class="btn btn btn-success btn-sm">Download Excel</a>
+                    </div>
+                <?php } ?>
+            <br/>
             <table class="table table-striped table-hover bg-white" style="background-color: #ffffff;" id="tabelpasien">
                 <thead>
                 <tr>

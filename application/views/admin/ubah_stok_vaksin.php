@@ -24,6 +24,7 @@
                             <option value="Spurnik V">Spurnik V</option>
                             <option value="Sinopharm">Sinopharm</option>
                             <option value="Sinovac">Sinovac</option>
+                            <option value="Lainnya">Lainnya</option>
                         </select>
                 </div>
                 <div class="form-group">
