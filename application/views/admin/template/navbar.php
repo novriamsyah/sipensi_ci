@@ -73,7 +73,7 @@
   <li class="<?php if ($this->uri->segment(2) == "cetak") {
                 echo "active";
               } ?> ">
-    <a href="#">
+    <a href="<?php echo base_url(); ?>admin/cetak">
       <span>Cetak Kartu</span>
     </a>
   </li>
